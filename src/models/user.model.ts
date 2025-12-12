@@ -76,6 +76,6 @@ coordinates:{type:[Number],default:[0,0]}
   
 }, { timestamps: true })
 
-// userSchema.index({location:'2dsphere'})
+userSchema.index({location:'2dsphere'})
 const User = mongoose.models.User || mongoose.model<IUser>("User", userSchema);
 export default User;
