@@ -3,7 +3,6 @@
 //step2  mongoose.connect('mongodburl')
 
 import { connect } from "mongoose"
-import mongoose from "mongoose"
 
 const mongodbUrl=process.env.MONGODB_URL!
 if(!mongodbUrl){
